@@ -15,7 +15,6 @@ class App extends React.Component {
         this.addTodo = this.addTodo.bind(this);
     }
     addTodo(val){
-        console.log('here');
         const todo = {
             text: val,
             id: uuid.v4(),
@@ -34,7 +33,7 @@ class App extends React.Component {
                     listLength = {this.state.data.length}
                 />
                 <TodoForm
-                    //add = {this.addTodo}
+                    add = {this.addTodo}
                 />
                 <TodoList
                     data = {this.state.data}
